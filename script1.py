@@ -68,6 +68,7 @@
 #         if x % i == 0:
 #             if x != i:
 #                 print(i)
+#     print('--------')
 
 # n = 0
 # x = 1
@@ -149,3 +150,84 @@
 #
 # new_list = [2, 7, 11, 13]
 # len_func(new_list)
+
+#######################################################
+# a=[1,2,3,4,5]
+# b=a
+# b[1]=20
+# print(a)
+# c=a[:]
+# print(c)
+# c[2]=30
+# print(c)
+# print(a)
+#
+# def set_first_elem_to_zero(l):
+#     l[0] = 0
+#     return l
+#
+# l = [10,20,30,40,50]
+# print(set_first_elem_to_zero(l))
+
+# a = [[1,2]] * 3
+# print(a)
+# b = [[1,2] for i in range(3)]
+# print(b)
+
+# def func_list_index(l,i):
+#     l[i] = 0
+#     return l
+#
+# print(func_list_index([1,2,3,4,5],1))
+
+# def func_sublists(l):
+#     x = []
+#     for i in l:
+#         for j in i:
+#             x.append(j)
+#     return x
+# print(func_sublists([[1,3],[3,6],[6,9]]))
+
+# import re
+# def func_longest_word(text):
+#     cleaned_text = re.sub(r'[^\w\s]', '', text)
+#     x = cleaned_text.split(" ")
+#     longest = ''
+#     for i in x:
+#         if len(i) > len(longest):
+#             longest = i
+#     return longest
+# print(func_longest_word("“Hello, how was the football match earlier today???"))
+
+# def func_pivots(x,l):
+#     empty_list = []
+#     for i in l:
+#         if i < x:
+#            empty_list.append(i)
+#     for i in empty_list:
+#         for j in l:
+#             if i==j:
+#                 l.remove(j)
+#     return empty_list + [x] + l
+# print(func_pivots(3, [6, 4, 1, 7]))
+
+# a = 10
+# b = 5
+# a,b = b,a
+# print(a,b)
+
+# def func_dict(dict):
+#     for k,v in dict.items():
+#         print(k , v)
+# func_dict({1:"Pavani", 2:"Female", 3:26})
+
+# x = [1, 1, 3, 2, 6, 7, 1, 2, 2, 3, 3, 4, 5]
+# count_dict = {}
+# for i in x:
+#     if i in count_dict:
+#         count_dict[i] += 1
+#     else:
+#         count_dict[i] = 1
+# print(count_dict)
+
+
